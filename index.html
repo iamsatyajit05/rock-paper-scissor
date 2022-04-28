@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scalee=1.0">
+    <link rel="shortcut icon" href="favicon.JPG">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+
+<body>
+    <h1>Rock Paper Scissor</h1>
+    <div id="gameArea">
+        <div class="user">
+            <h2>you</h2>
+            <div>
+                <img onclick="updateValue(1)" id="userRock" class="hover" src="rock.jpeg" alt="rock">
+                <img onclick="updateValue(2)" id="userPaper" class="hover" src="paper.jpeg" alt="paper">
+                <img onclick="updateValue(3)" id="userScissor" class="hover" src="scissor.jpeg" alt="scissor">
+            </div>
+        </div>
+        <div class="computer">
+            <h2>computer</h2>
+            <div>
+                <img id="compRock" src="rock.jpeg" alt="rock">
+                <img id="compPaper" src="paper.jpeg" alt="paper">
+                <img id="compScissor" src="scissor.jpeg" alt="scissor">
+            </div>
+        </div>
+        <h2 id="scoreCard">0 : 0</h2>
+    </div>
+
+    <div id="winScreen">
+        <p>You <span id="winStatu">Win</span>!!</p>
+        <button onclick="playAgain()">Play Again</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
